@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Engine Binaries & Large Weights
+# stockfish: https://stockfishchess.org/download/
+# lc0-v0.32.1-windows-cpu-dnnl/: https://lczero.org/play/download/
+# maria-chess: https://github.com/CSSLab/maia-chess
+stockfish/
+lc0-v0.32.1-windows-cpu-dnnl/
+maia-chess/maia_weights/*.pb.gz
+
+# OS generated files
+.DS_Store
+Thumbs.db
