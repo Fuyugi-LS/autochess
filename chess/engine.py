@@ -438,7 +438,8 @@ class GameState():
             if self.pins[i][0] == row and self.pins[i][1] == col:
                 piecePinned = True
                 pinDirection = (self.pins[i][2], self.pins[i][3])
-                self.pins.remove(self.pins[i])
+                if self.board[row][col][1] != 'Q':
+                    self.pins.remove(self.pins[i])
                 break
 
         directions = [(1, 1), (-1, -1), (-1, 1), (1, -1)]  # diagonals
